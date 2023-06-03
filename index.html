@@ -1,57 +1,48 @@
 <!DOCTYPE html>
-
-<html lang="es">
-    
-    <head>
-
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
-
-        <title> Encriptador </title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
-
-    </head>
-
-    <body>
-        <header>
-            <div class="logo">
-                <h1><img src="IMAGES/VectorAluraLogo.png" alt="Logo ALura"></h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+        <img class="logo" src="IMAGES/image-logo.png" alt="logo de alura" >
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
             </div>
-        </header>
-
-        <main>
-            <section>
-                <textarea class="text-area" cols="30" rows"10" placeholder="Ingrese el texto aqui"></textarea>
-                <div>
-                    <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
-                </div>
-
-                <div class="botones">
-                    <button class="btn-encriptar" onclick = "btnEncriptar"> Encriptar </button>
-                    <button class="btn-desencriptar" onclick="btnDesencriptar"> Desencriptar </button>
-                </div>
-
-            </section>
-
-            <section>
-                <textarea class="text-mensaje" cols="20" rows="10"></textarea>
-                <div>
-                    <button class="btn-copiar">Copiar</button>
-                </div>
-            </section>
-           
-        </main>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script> 
 
-        <footer>
-            <p class="copyright">&copy Copyright Andrea Martínez - 2023</p>
+    <footer>
+        
+        <p class="credits">By: Andrea Martínez Mondragón • Copyright 2023 • Alura x Oracle</p>
+        
+        <div class="links-container">
+            <a class="social" href="https://github.com/DreaMdn" target="_blank"><img src="IMAGES/github-logo.png" alt="Logo github"></a>
+            <a class="social" href="https://www.linkedin.com/in/andrea-martinez-a65508271/" target="_blank"><img src="IMAGES/ld-logo.png" alt="Logo linkedIn"></a>
+        </div>
 
-        </footer>
+    </footer>
 
     </body>
 
